@@ -1,6 +1,6 @@
 import express from 'express';
 import { resolve } from 'path';
-
+import router from './routes';
 
 class App {
   constructor() {
@@ -17,9 +17,7 @@ class App {
     );
   }
   routes() {
-    this.server.use((req, res) => {
-      res.json({ ok : "Hello World ! 😎"});
-    });
+    this.server.use(router);
   }
 }
 
