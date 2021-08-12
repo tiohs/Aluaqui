@@ -5,8 +5,9 @@ class UserController {
     res.json(user);
   }
   store(req, res) {
-    const { email, password, type } = req.body;
-    console.log(email)
+    const { email, password, type, name } = req.body;
+    user.push(req.body);
+    res.json({ name, email, type});
   }
 }
 
