@@ -7,7 +7,7 @@ const emovelSchema = new mongoose.Schema(
       required: true,
     },
     descrition: {
-      type: Number,
+      type: String,
       required: true,
     },
   },

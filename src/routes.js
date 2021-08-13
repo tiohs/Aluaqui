@@ -7,7 +7,7 @@ const router = new Router();
 
 router.get('/user', UserController.index);
 router.post('/user', UserController.store);
-router.get('/imovel', EmovelController.store);
-router.post('/imovel', EmovelController.index);
+router.post('/imovel', EmovelController.store);
+router.get('/imovel', EmovelController.index);
 
 export default router;
