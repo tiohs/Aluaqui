@@ -1,9 +1,10 @@
-const emovel = [];
+import Emovel from '../schemas/Emovel';
 
 class EmovelControllers {
-  store(req, res) {
-    const { idUser, type, descretion } = req.body;
-    emovel.push(req.body);
+  async store(req, res) {
+    const emovel = await Emovel.create({
+
+    });
     res.json(emovel);
   }
   index(req, res) {
