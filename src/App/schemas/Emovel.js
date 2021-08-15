@@ -10,6 +10,14 @@ const emovelSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    Compartimento : {
+      type: String,
+      required: true,
+    },
+    localization : {
+
+    },
+
   },
   { timestamps: true }
 );
