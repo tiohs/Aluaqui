@@ -1,7 +1,7 @@
 import { Router } from 'express';
 
 // Middlewares
-import auth from './App/middlewares/auth';
+import authMiddleware from './App/middlewares/auth';
 // Controllers 
 import UserController from './App/controllers/UserController';
 import ImovelController from './App/controllers/ImovelController';
@@ -11,7 +11,7 @@ const router = new Router();
 
 router.post('/sessions', SessionController.store);
 router.post('/user', UserController.store);
-router.use(auth);
+router.use(authMiddleware);
 router.post('/imovel', ImovelController.store);
 router.get('/imovel', ImovelController.index);
 
