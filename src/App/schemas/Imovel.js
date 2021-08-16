@@ -6,18 +6,27 @@ const ImovelSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    descrition: {
-      type: String,
+    quarto : Number,
+    // descrition: {
+    //   type: String,
+    //   required: true,
+    // },
+    OtherCompartiment : {
+      type: [{ name : String, number : Number }],
       required: true,
     },
-    Compartimento : {
-      type: String,
-      required: true,
-    },
-    localization : {
-
-    },
-
+    // provincia : {
+    //   type: String,
+    //   required: true,
+    // },
+    // municipio : {
+    //   type: String,
+    //   required: true,
+    // },
+    // location : {
+    //   cord : [String]
+    // }
+    
   },
   { timestamps: true }
 );

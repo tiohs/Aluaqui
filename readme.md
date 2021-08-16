@@ -9,3 +9,9 @@ Foto User []
 
 ## Todo Filter Poster 
 []
+
+
+*Idias*
+Quero mact 
+Hoteis algoritmo do hotel mais proximo 
+Hoteis dando valores especidicos de quarto  
