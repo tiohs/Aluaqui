@@ -5,6 +5,7 @@ import express from 'express';
 import { resolve } from 'path';
 import router from './routes';
 
+import './database';
 class App {
   constructor() {
     this.server = express();
