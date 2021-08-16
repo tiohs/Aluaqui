@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const emovelSchema = new mongoose.Schema(
+const ImovelSchema = new mongoose.Schema(
   {
     type: {
       type: String,
@@ -22,4 +22,4 @@ const emovelSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model('Emovel', emovelSchema);
+export default mongoose.model('Imovel', ImovelSchema);
