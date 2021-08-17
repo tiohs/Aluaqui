@@ -19,5 +19,6 @@ router.use(authMiddleware);
 router.post('/file', upload.single('file'), FileController.store);
 router.post('/imovel', ImovelController.store);
 router.get('/imovel', ImovelController.index);
+router.put('/user', UserController.update);
 
 export default router;
