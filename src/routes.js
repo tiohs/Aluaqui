@@ -8,7 +8,7 @@ import multerConfig from './config/multer';
 import UserController from './App/controllers/UserController';
 import ImovelController from './App/controllers/ImovelController';
 import SessionController from './App/controllers/SessionControllers';
-import FileController from './App/controllers/SessionControllers';
+import FileController from './App/controllers/FileCotrollers';
 
 const router = new Router();
 const upload = multer(multerConfig);
