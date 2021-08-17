@@ -6,11 +6,15 @@ const ImovelSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    quarto : Number,
-    // descrition: {
-    //   type: String,
-    //   required: true,
-    // },
+    room : {number : Number, d : [Number]},
+    wc: {number : Number, d : [Number]},
+    sala: {number : Number, d : [Number]},
+    kitchen : {number : Number, d : [Number]},
+    quintal: {number : Number, d : [Number]},
+    descrition: {
+      type: String,
+      required: true,
+    },
     OtherCompartiment : {
       type: [{ name : String, number : Number }],
       required: true,
@@ -23,10 +27,18 @@ const ImovelSchema = new mongoose.Schema(
     //   type: String,
     //   required: true,
     // },
-    // location : {
-    //   cord : [String]
-    // }
-    
+    location : {
+      cord : [Number]
+    },
+    dimensao : {
+      type : [Number],
+      required: true,
+    }
+    ,
+    idUser : {
+      type: String,
+      required: true,
+    }
   },
   { timestamps: true }
 );

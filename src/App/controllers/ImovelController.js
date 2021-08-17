@@ -3,7 +3,8 @@ import Imovel from '../schemas/Imovel';
 class ImovelControllers {
   async store(req, res) {
     const Imovels = await Imovel.create(req.body);
-    res.json(Imovels);
+    Imovel.userId = 
+    res.json();
   }
   async index(req, res) {
     const Imovels = await Imovel.find();
