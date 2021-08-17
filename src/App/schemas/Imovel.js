@@ -6,10 +6,10 @@ const ImovelSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    room : {number : Number, d : [Number]},
+    quarto : {number : Number, d : [Number]},
     wc: {number : Number, d : [Number]},
     sala: {number : Number, d : [Number]},
-    kitchen : {number : Number, d : [Number]},
+    cozinha: {number : Number, d : [Number]},
     quintal: {number : Number, d : [Number]},
     descrition: {
       type: String,
@@ -27,6 +27,10 @@ const ImovelSchema = new mongoose.Schema(
     //   type: String,
     //   required: true,
     // },
+    photo : {
+      type : [String],
+      required: true
+    },
     location : {
       cord : [Number]
     },
